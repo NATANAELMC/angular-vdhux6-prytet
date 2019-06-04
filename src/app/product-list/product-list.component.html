@@ -20,8 +20,14 @@ can be found in the LICENSE file at http://angular.io/license
     Description: {{ product.description }}
   </p>
  
+  
+
   <button (click)="share()">
-    Share
-  </button>
+  Share
+</button>
+
+<app-product-alerts
+  [product]="product">
+</app-product-alerts>
  
 </div>
